@@ -8,6 +8,7 @@ process.on('uncaughtException', err=>{
     console.error(`une erreur s'est produite: ${err.code}`);
     process.exit(1);
 });
+
 fs.readFile(nomFichier, 'utf-8', (err, contenu)=>{
     if (err) {
         if (err.code==='ENOENT') {

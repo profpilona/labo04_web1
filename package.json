@@ -2,10 +2,15 @@
   "name": "labo04",
   "version": "1.0.0",
   "description": "Début de la programmation NodeJS",
-  "main": "index.js",
+  "main": "http.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node http.js",
+    "dev": "nodemon http.js"
   },
   "author": "Alain Pilon",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "uuid": "^9.0.0"
+  }
 }
